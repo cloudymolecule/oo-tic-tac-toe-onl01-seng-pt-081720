@@ -111,6 +111,7 @@ class TicTacToe
         return c
       end
     end
+    return false
   end
 
 end

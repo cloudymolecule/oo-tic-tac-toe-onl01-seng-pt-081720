@@ -103,7 +103,7 @@ class TicTacToe
       pos3 = @board[c[2]]
 
       if combo1 == pos1 && combo2 == pos2 && combo3 == pos3
-        win = [c[0], c[1], c[2]]
+        win = c
       end
     end
     if win = []

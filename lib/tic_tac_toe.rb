@@ -114,11 +114,11 @@ class TicTacToe
     counter = 0
     @board.each do |xo|
       if xo == "X" || xo == "O"
-      elsif xo == " "
+      else
         counter += 1
       end
     end
-    if counter == 9
+    if counter == 8
       return true
     end
   end

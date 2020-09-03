@@ -99,7 +99,9 @@ class TicTacToe
         false
       end
     end
-    win
+    if win == []
+      false
+    end
   end
 
 end

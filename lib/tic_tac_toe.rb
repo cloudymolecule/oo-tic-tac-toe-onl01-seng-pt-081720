@@ -150,9 +150,9 @@ class TicTacToe
       pos3 = @board[c[2]]
 
       if pos1 == "X" && pos2 == "X" && pos3 == "X"
-        top == "X"
+        top = "X"
       else pos1 == "O" && pos2 == "O" && pos3 == "O"
-        top == "O"
+        top = "O"
       end
     end
     return top

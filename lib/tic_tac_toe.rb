@@ -154,7 +154,6 @@ class TicTacToe
         return "O"
       end
     end
-    return false
   end
 
 end

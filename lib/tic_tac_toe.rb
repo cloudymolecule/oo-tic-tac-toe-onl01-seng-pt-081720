@@ -101,6 +101,8 @@ class TicTacToe
     end
     if win == []
       false
+    else
+      win
     end
   end
 

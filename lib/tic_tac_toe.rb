@@ -138,21 +138,23 @@ class TicTacToe
   end
 
   def winner
-    x = 0
-    o = 0
-    @board.each do |xo|
-      if xo == "X"
-        x += 1
-      elsif xo == "O"
-        o += 1
+    WIN_COMBINATIONS.each do |c|
+
+      combo1 = c[0]
+      combo2 = c[1]
+      combo3 = c[2]
+
+      pos1 = @board[c[0]]
+      pos2 = @board[c[1]]
+      pos3 = @board[c[2]]
+
+      if pos1 == "X" && pos2 == "X" && pos3 == "X"
+        return "X"
+      elsif pos1 == "O" && pos2 == "O" && pos3 == "O"
+        return "O"
       end
     end
-    if x > o
-      return "X"
-    
-    else
-      return "O"
-    end
+    return false
   end
 
 end

@@ -158,7 +158,7 @@ class TicTacToe
     if top == ""
       return nil
     else
-      top
+      return top
     end
   end
 

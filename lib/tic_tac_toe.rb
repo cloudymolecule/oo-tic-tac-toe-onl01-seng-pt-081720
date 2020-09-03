@@ -93,15 +93,20 @@ class TicTacToe
   def won?
     win = []
     WIN_COMBINATIONS.each do |c|
-      if @board[c[0]] == "X" || @board[c[1]] == "X" || @board[c[2]] == "X"
+
+      combo1 = c[0]
+      combo2 = c[1]
+      combo3 = c[2]
+
+      pos1 = @board[c[0]]
+      pos2 = @board[c[1]]
+      pos3 = @board[c[2]]
+
+      if combo1 == pos1 && combo2 == pos2 && combo3 == pos3
         win = [c[0], c[1], c[2]]
-      elsif @board[c[0]] == "O" || @board[c[1]] == "O" || @board[c[2]] == "O"
-        win = [c[0], c[1], c[2]]
-      else
-        false
       end
     end
-    if win []
+    if win = []
       false
     else
       win

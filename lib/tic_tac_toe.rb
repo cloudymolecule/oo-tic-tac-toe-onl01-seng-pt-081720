@@ -151,7 +151,7 @@ class TicTacToe
 
       if pos1 == "X" && pos2 == "X" && pos3 == "X"
         top = "X"
-      else pos1 == "O" && pos2 == "O" && pos3 == "O"
+      elsif pos1 == "O" && pos2 == "O" && pos3 == "O"
         top = "O"
       end
     end

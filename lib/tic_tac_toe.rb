@@ -94,7 +94,7 @@ class TicTacToe
     win = ""
     WIN_COMBINATIONS.each do |comb|
       if comb[0] == @board[comb[0]] && comb[1] == @board[comb[1]] && comb[2] == @board[comb[2]]
-        win = "#{[comb[0]}, #{[comb[1]}, #{[comb[2]}"
+        win = "#{comb[0]}, #{comb[1]}, #{comb[2]}"
       else
         false
       end

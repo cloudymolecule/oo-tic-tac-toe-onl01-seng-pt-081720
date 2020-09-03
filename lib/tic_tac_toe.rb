@@ -91,17 +91,15 @@ class TicTacToe
   end
 
   def won?
-
-    num_board = @board
     WIN_COMBINATIONS.each do |c|
 
       combo1 = c[0]
       combo2 = c[1]
       combo3 = c[2]
 
-      pos1 = num_board[c[0]]
-      pos2 = num_board[c[1]]
-      pos3 = num_board[c[2]]
+      pos1 = @board[c[0]]
+      pos2 = @board[c[1]]
+      pos3 = @board[c[2]]
 
       if pos1 == "X" && pos2 == "X" && pos3 == "X"
         return c
@@ -110,6 +108,19 @@ class TicTacToe
       end
     end
     return false
+  end
+
+  def full?
+    counter = 0
+    @board.each do |xo|
+      if xo == "X" || xo == "O"
+      else
+        counter += 1
+      end
+    end
+    if counter == 9
+      return true
+    end
   end
 
 end

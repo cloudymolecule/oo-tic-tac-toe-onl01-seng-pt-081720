@@ -143,7 +143,7 @@ class TicTacToe
     @board.each do |xo|
       if xo == "X"
         x += 1
-      if xo == "O"
+      elsif xo == "O"
         o += 1
       end
     end

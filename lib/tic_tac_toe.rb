@@ -91,13 +91,16 @@ class TicTacToe
   end
 
   def won?
+    win = nil
     WIN_COMBINATIONS.each do |comb|
+      win = nil
       if comb[0] == @board[comb[0]] && comb[1] == @board[comb[1]] && comb[2] == @board[comb[2]]
-        true
+        win = true
       else
-        false
+        win = false
       end
     end
+    win
   end
 
 end

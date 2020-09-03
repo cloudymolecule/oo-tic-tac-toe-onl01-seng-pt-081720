@@ -103,9 +103,9 @@ class TicTacToe
       num_board[c[1]] = c[1]
       num_board[c[2]] = c[2]
 
-      pos1 = num_board[c[0]]
-      pos2 = num_board[c[1]]
-      pos3 = num_board[c[2]]
+      pos1 = num_board[c[0]].index
+      pos2 = num_board[c[1]].index
+      pos3 = num_board[c[2]].index
 
       if combo1 == pos1 && combo2 == pos2 && combo3 == pos3
         win = c

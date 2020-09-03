@@ -111,14 +111,14 @@ class TicTacToe
   end
 
   def full?
-    counter = 0
+    counter = 1
     @board.each do |xo|
       if xo == "X" || xo == "O"
       else
         counter += 1
       end
     end
-    if counter == 8
+    if counter == 9
       return true
     end
   end

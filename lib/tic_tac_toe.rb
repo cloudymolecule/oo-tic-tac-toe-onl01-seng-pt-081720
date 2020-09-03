@@ -138,6 +138,7 @@ class TicTacToe
   end
 
   def winner
+    top = ""
     WIN_COMBINATIONS.each do |c|
 
       combo1 = c[0]
@@ -149,13 +150,13 @@ class TicTacToe
       pos3 = @board[c[2]]
 
       if pos1 == "X" && pos2 == "X" && pos3 == "X"
-        return "X"
-      elsif pos1 == "O" && pos2 == "O" && pos3 == "O"
-        return "O"
+        top == "X"
+      else pos1 == "O" && pos2 == "O" && pos3 == "O"
+        top == "O"
       else
-        return nil
       end
     end
+    return top
   end
 
 end

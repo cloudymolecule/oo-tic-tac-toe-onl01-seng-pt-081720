@@ -99,6 +99,12 @@ class TicTacToe
         win = [c[0], c[1], c[2]]
       else
         false
+      end
+    end
+    if win []
+      false
+    else
+      win
     end
   end
 

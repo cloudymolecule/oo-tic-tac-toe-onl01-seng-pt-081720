@@ -149,8 +149,10 @@ class TicTacToe
     end
     if x > o
       return "X"
-    else
+    elsif o > x
       return "O"
+    else
+      return nil
     end
   end
 

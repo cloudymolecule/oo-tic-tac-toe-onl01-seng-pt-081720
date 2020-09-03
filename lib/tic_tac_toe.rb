@@ -153,7 +153,6 @@ class TicTacToe
         top == "X"
       else pos1 == "O" && pos2 == "O" && pos3 == "O"
         top == "O"
-      else
       end
     end
     return top

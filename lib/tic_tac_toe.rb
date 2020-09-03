@@ -155,7 +155,11 @@ class TicTacToe
         top = "O"
       end
     end
-    return top
+    if top == ""
+      return nil
+    else
+      top
+    end
   end
 
 end

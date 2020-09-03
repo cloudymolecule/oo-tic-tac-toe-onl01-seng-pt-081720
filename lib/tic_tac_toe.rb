@@ -152,6 +152,8 @@ class TicTacToe
         return "X"
       elsif pos1 == "O" && pos2 == "O" && pos3 == "O"
         return "O"
+      else
+        return nil
       end
     end
   end

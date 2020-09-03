@@ -137,4 +137,20 @@ class TicTacToe
     end
   end
 
+  def winner
+    x = 0
+    o = 0
+    @board.each do |xo|
+      if xo == "X"
+        x += 1
+      if xo == "O"
+        o += 1
+      end
+    end
+    if x > o
+      return "X"
+    else
+      return "O"
+  end
+
 end
